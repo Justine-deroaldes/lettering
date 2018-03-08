@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/main.css">
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Anton|Dhurjati|Playfair+Display" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/colorbox.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script/jquery.colorbox-min.js"></script>
+
+    <script src="script/jquery.lettering.js"></script>
+
+  </head>
+  <body>
+
+    <h1 class="fancy_title">THIS IS ABOUT SALVADOR</h1>
+
+<div class="photos">
+    <a class='gallery' href='images/1.png'>
+    <img src="images/1.png" alt="Le chercheur"></a>
+    <a class='gallery' href='images/2.png'>
+    <img src="images/2.png" alt="L'amoureux"></a>
+    <a class='gallery' href='images/3.png'>
+    <img src="images/3.png" alt="Le poète"></a>
+</div>
+
+
+<script>
+	  $(document).ready(function() {
+	    $(".fancy_title").lettering();
+	  });
+</script>
+
+<script>
+  jQuery('a.gallery').colorbox();
+</script>
+
+
+<script>
+$('a.gallery').colorbox({rel:'gal'})
+</script>
+
+  </body>
+</html>
